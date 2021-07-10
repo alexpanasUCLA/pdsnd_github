@@ -108,11 +108,11 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # TO DO: display the most common month
+
     most_common_month = df['month'].mode()[0]
     print('Most rides were in: ',months[most_common_month-1].title())
-    # TO DO: display the most common day of week
-    # most_common_weekday_count = df.groupby(['day_of_week'])['month'].count()
+  
+  
     most_common_weekday = df['day_of_week'].mode()[0]
     print('Most common day of week: ',most_common_weekday)
     # print(most_common_weekday_count)
