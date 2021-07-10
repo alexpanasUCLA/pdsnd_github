@@ -107,17 +107,15 @@ def time_stats(df):
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
-
-
     most_common_month = df['month'].mode()[0]
     print('Most rides were in: ',months[most_common_month-1].title())
   
-  
+    # most_common_weekday_count = df.groupby(['day_of_week'])['month'].count()
     most_common_weekday = df['day_of_week'].mode()[0]
     print('Most common day of week: ',most_common_weekday)
     # print(most_common_weekday_count)
 
-    # TO DO: display the most common start hour
+ 
     most_common_hour = df['Start Hour'].mode()[0]
     print('Most common hour: ',most_common_hour)
 
@@ -196,8 +194,6 @@ def user_stats(df):
     except:
         print("There is no data on gender.")
 
-
-    # TO DO: Display earliest, most recent, and most common year of birth
     # Display earliest, most recent, and most common year of birth
     try:
         earliest_birth_year = str(int(df["Birth Year"].min()))
