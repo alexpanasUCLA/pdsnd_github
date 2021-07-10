@@ -7,7 +7,7 @@ July 10 2021.
 
 
 ### Description
-Describe what your project is about and what it does
+Porject analyzes bike data. 
 
 ### Files used
 Include the files used
